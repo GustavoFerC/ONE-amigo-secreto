@@ -21,7 +21,7 @@ let nomes = [];
         }
 
         function atualizarLista() {
-            let lista = document.getElementById('lista-participantes'); // Usando o novo ID correto
+            let lista = document.getElementById('lista-participantes'); 
             lista.innerHTML = '';
 
             nomes.forEach(nome => {
@@ -44,7 +44,7 @@ let nomes = [];
         }
         
         function resetarLista() {
-            nomes = [];  // Agora a lista será realmente zerada
+            nomes = [];  
             document.getElementById("lista-participantes").innerHTML = ""; 
             document.getElementById("resultado").textContent = "";
         }
