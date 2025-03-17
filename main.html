@@ -7,15 +7,29 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+
     <button class="toggle-theme" onclick="toggleTheme()">🌙</button>
+
     <div class="container">
         <h2>Amigo Secreto</h2>
         <input type="text" id="nome" placeholder="Digite um nome">
         <button onclick="adicionarNome()">Adicionar</button>
-        <ul id="lista"></ul>
-        <button onclick="sortear()">Sortear Amigo</button>
+        <button onclick="sortear()">Sortear</button>
+        <button onclick="resetarLista()">Resetar Lista</button>
         <p id="resultado"></p>
     </div>
+
+    <div class="pet-container">
+        <img src="/imgs/pet.png" alt="pet" class="pet-img">
+        <button class="pet-button"></button>
+        <div class="speech-bubble">Desenvolvido pelo GustavoFerC</div>
+    </div>
+    
+    <div class="lista-participantes">
+        <h3>Lista de Participantes</h3>
+        <ul id="lista-participantes"></ul> 
+    </div>
+    
 
     <script src="app.js"></script>
 </body>

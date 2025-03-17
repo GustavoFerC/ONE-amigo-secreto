@@ -1,5 +1,6 @@
 let nomes = [];
 
+
         function adicionarNome() {
             let nomeInput = document.getElementById('nome');
             let nome = nomeInput.value.trim();
@@ -20,7 +21,7 @@ let nomes = [];
         }
 
         function atualizarLista() {
-            let lista = document.getElementById('lista');
+            let lista = document.getElementById('lista-participantes'); // Usando o novo ID correto
             lista.innerHTML = '';
 
             nomes.forEach(nome => {
@@ -35,13 +36,28 @@ let nomes = [];
                 alert("Adicione pelo menos 2 nomes para realizar o sorteio!");
                 return;
             }
-
+        
             let sorteado = nomes[Math.floor(Math.random() * nomes.length)];
-            document.getElementById('resultado').textContent = `🎉 O amigo secreto é: ${sorteado}!`;
+            let resultadoElemento = document.getElementById('resultado');
+        
+            resultadoElemento.textContent = `🎉 O amigo secreto é: ${sorteado}!`;
         }
+        
+        function resetarLista() {
+            nomes = [];  // Agora a lista será realmente zerada
+            document.getElementById("lista-participantes").innerHTML = ""; 
+            document.getElementById("resultado").textContent = "";
+        }
+        
 
         function toggleTheme() {
             document.body.classList.toggle('night-mode');
             let button = document.querySelector('.toggle-theme');
             button.textContent = document.body.classList.contains('night-mode') ? '☀️' : '🌙';
         }
+        
+        document.querySelector(".pet-button").addEventListener("click", function() {
+            let bubble = document.querySelector(".speech-bubble");
+            bubble.style.display = bubble.style.display === "block" ? "none" : "block";
+        });
+        
