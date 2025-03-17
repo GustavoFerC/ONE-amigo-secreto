@@ -23,7 +23,7 @@ body {
     display: flex;
     flex-direction: column;
     align-items: center; 
-    justify-content: space-between; 
+    justify-content: center; 
 }
 
 #resultado {
@@ -91,9 +91,9 @@ ul {
 }
 
 .toggle-theme {
-    position: fixed; 
-    top: 200px; 
-    right: 590px; 
+    position: relative; 
+    top: -250px; 
+    right: -240px; 
     background-color: #ffffff;
     border: none;
     cursor: pointer;
@@ -183,9 +183,9 @@ ul {
 }
 
 .lista-participantes {
-    position: absolute;
-    right: 100px;
-    top: 50%;
+    position: relative;
+    right: -100px;
+    top: 15%;
     transform: translateY(-50%);
     width: 200px; 
     height: 250px; 
@@ -212,4 +212,16 @@ ul {
 .lista-participantes li {
     padding: 5px;
     border-bottom: 1px solid #ccc;
+}
+
+@media (max-width: 768px) {
+    .toggle-theme {
+        top: 15px;
+        right: 15px;
+    }
+
+    .lista-participantes {
+        width: 180px;
+        right: 10px;
+    }
 }
