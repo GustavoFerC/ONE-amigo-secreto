@@ -28,4 +28,5 @@ Sinta-se à vontade para contribuir com melhorias no código, seja otimizando fu
 
 ⚡ _**Em Execução**_ [GIF]
 
-![Corruption (1)](https://github.com/user-attachments/assets/5285d404-e8b0-4031-93a3-b4317ddaac0c)
+
+![app-execut](https://github.com/user-attachments/assets/2790f1db-40d9-46e0-a4df-72b8beb3e04a)
